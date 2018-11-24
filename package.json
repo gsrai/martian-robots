@@ -13,6 +13,7 @@
   "author": "Gagondeep Srai",
   "homepage": "https://github.com/gsrai/martian-robots#readme",
   "devDependencies": {
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "mock-stdin": "^0.3.1"
   }
 }
