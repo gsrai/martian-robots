@@ -12,8 +12,7 @@ function inputReader(cb) {
 
   process.stdin.on('end', _ => {
     inputString = inputString.trim().split('\n').map(str => str.trim())
-    const inputLength = inputString.length
-    cb(inputString, inputLength)
+    cb(inputString)
   })
 }
 
