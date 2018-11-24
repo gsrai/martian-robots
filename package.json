@@ -1,0 +1,18 @@
+{
+  "name": "martian-robots",
+  "version": "1.0.0",
+  "description": "My Solution to the Red Badger Coding Challenge",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsrai/martian-robots.git"
+  },
+  "author": "Gagondeep Srai",
+  "homepage": "https://github.com/gsrai/martian-robots#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
