@@ -1,12 +1,4 @@
-function readGridSize(str) {
-  const coordinates = str.split(' ').map(s => parseInt(s, 10))
-  if (coordinates.length != 2) {
-    console.error('Invalid input, require size of grid as two coordinates: x y')
-    process.exit()
-    // TODO: add better error handling
-  }
-  return coordinates
-}
+const { readGridSize, createGrid } = require('./grid')
 
 function parsePosition(str) {
   const parts = str.split(' ')
@@ -30,6 +22,7 @@ function readRobotData(lines) {
 }
 
 // move '' literal to constant, error checking? constraint validation?
+// make commands all upcase
 function robotFactory(x, y, orientation, commands) {
   return {
     x, y, orientation,
@@ -41,6 +34,8 @@ function robotFactory(x, y, orientation, commands) {
 function main(inputLines) {
   const [MAX_X, MAX_Y] = readGridSize(inputLines.shift())
   const robots = readRobotData(inputLines)
+
+  const grid = createGrid(MAX_X, MAX_Y)
 
   return {
     grid: { width: MAX_X, height: MAX_Y },
