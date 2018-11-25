@@ -23,3 +23,12 @@ Step 1: Install dependencies:
 Step 2: Run the tests
 
 ```npm run test```
+
+***
+
+#### Improvements ####
+
+If I had more time to complete the problem I would add:
+
+- validation of inputs and verification of constraints
+- more comprehensive error checking
