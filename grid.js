@@ -1,4 +1,3 @@
-// should this be a singleton? validate x/y constraint being 50
 function createGrid(width, height) {
   const map = {}
   const grid = {}
