@@ -7,9 +7,10 @@ test('parses input lines to get grid dimensions', () => {
   expect(result[1]).toBe(3)
 })
 
-// test('parses input lines to get grid dimensions', () => {
-//  test error case
-// })
+test('exits and logs error when incorrect grid coordinates are passed', () => {
+  const mockData = '3'
+  expect(_ => readGridSize(mockData)).toThrow()
+})
 
 describe('Grid functionality', () => {
   const grid = createGrid(3, 3)

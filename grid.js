@@ -25,9 +25,7 @@ function createGrid(width, height) {
 function readGridSize(str) {
   const coordinates = str.split(' ').map(s => parseInt(s, 10))
   if (coordinates.length != 2) {
-    console.error('Invalid input, require size of grid as two coordinates: x y')
-    process.exit()
-    // TODO: add better error handling
+    throw new Error('Invalid input, require size of grid as two coordinates: x y')
   }
   return coordinates
 }
